@@ -10,12 +10,16 @@
 <br><br>
 
 <div th:object = "${data2}">
-<h1 th:text ="*{id}">Id</h1>
+<h1 th:text ="*{id}" >Id</h1>
 <h1 th:text = "*{Name}">Name</h1>
 <h1 th:text = "*{marks}">Marks</h1>
 
 </div>
 
+<br><br>
 
+<h1 th:text = "${data2.id}">Id</h1>
+<h2 th:text = "${data2.Name}">Name</h2>
+<h2 th:text = "${data2.marks}">Marks</h2>
 </body>
 </html>
