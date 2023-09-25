@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 th:text="${data2}">data</h1>
+
+<br><br>
+
+<div th:object = "${data2}">
+<h1 th:text ="*{id}">Id</h1>
+<h1 th:text = "*{Name}">Name</h1>
+<h1 th:text = "*{marks}">Marks</h1>
+
+</div>
+
+
+</body>
+</html>
